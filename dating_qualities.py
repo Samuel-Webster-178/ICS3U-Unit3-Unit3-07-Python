@@ -2,24 +2,23 @@
 
 # Created by Samuel Webster
 # Created on March 2022
-# This program calculates the circumference of a circle
-#     with inputted radius
-
-
-import constants
+# This program calculates whether you can date a daughter
 
 
 def main():
     # I calculate circumference
 
     # input
-    radius = int(input("Enter radius of the circle in mm: "))
+    is_rich = input("Are you rich (y/n): ")
+    is_goodlooking = input("Are you goodlooking (y/n): ")
 
-    # process
-    circumference = constants.TAU * radius
+    # process & output
+    if is_rich == "y" or is_goodlooking == "y":
+        print("You can date her")
+    else:
+        print("You can't date her")
 
     # output
-    print("Circumference is {} mm.".format(circumference))
     print("\nDone.")
 
 
