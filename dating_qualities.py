@@ -10,13 +10,15 @@ def main():
 
     # input
     is_rich = input("Are you rich (y/n): ")
-    is_goodlooking = input("Are you goodlooking (y/n): ")
+    is_goodlooking = input("Are you good looking (y/n): ")
 
     # process & output
     if is_rich == "y" or is_goodlooking == "y":
         print("You can date her")
-    else:
+    elif is_rich == "n" and is_goodlooking == "n":
         print("You can't date her")
+    else:
+        print("Invalid input")
 
     # output
     print("\nDone.")
